@@ -1,1 +1,25 @@
-<p>kanto-region works!</p>
+<section class = "kanto-region">
+    <h1>Kanto Region</h1>
+
+    <div class = "card-grid">
+        @for (leader of KantoGymLeaders(); track leader.name) {
+            <div class = "card">
+                <h3>@leader.name</h3>
+                <p><strong>Type:</strong> @leader.type</p>
+                <p><strong>Badge:</strong> @leader.badge</p>
+                <p><strong>Location:</strong> @leader.location</p>
+
+                <div class = "team">
+                    <h4>Team:</h4>
+                    <ul>
+                        @for (pokemon of leader.pokemonteam; track pokemon.name) {
+                            <li>Name: @pokemon.name</li>
+                            <li>Type: @pokemon.type</li>
+                            <li>Level: @pokemon.level</li>
+                        }
+                    </ul>
+                </div>   
+            </div>
+        }
+    </div>
+</section>    

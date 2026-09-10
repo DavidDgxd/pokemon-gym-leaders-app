@@ -7,10 +7,11 @@ import { Component, signal } from '@angular/core';
   templateUrl: './kanto-region.html',
 })
 export class KantoRegion {
-  gymLeaders = signal([
+  KantoGymLeaders = signal([
     { 
       name: 'Brock', 
       badge: ' Boulder Badge ', 
+      location: 'Pewter City',  
       pokemonteam: [
         {
           name: 'Onix',
@@ -27,7 +28,8 @@ export class KantoRegion {
 
     { 
       name: 'Misty', 
-      badge: ' Cascade Badge ', 
+      badge: ' Cascade Badge ',
+      location: 'Cerulean City', 
       pokemonteam: [
         {
           name: 'Staryu',
@@ -44,6 +46,7 @@ export class KantoRegion {
     { 
       name: 'Lt. Surge', 
       badge: ' Thunder Badge ', 
+      location: 'Vermilion City',
       pokemonteam: [
         {
           name: 'Pikachu',
@@ -66,6 +69,7 @@ export class KantoRegion {
     { 
       name: 'Erika', 
       badge: ' Rainbow Badge ', 
+      location: 'Celadon City',
       pokemonteam: [
         {
           name: 'Vileplume',
@@ -88,6 +92,7 @@ export class KantoRegion {
     { 
       name: 'Koga', 
       badge: ' Marsh Badge ', 
+      location: 'Fuchsia City',
       pokemonteam: [
         {
           name: 'Koffing',
@@ -110,6 +115,7 @@ export class KantoRegion {
     { 
       name: 'Sabrina', 
       badge: ' Soul Badge ', 
+      location: 'Saffron City',
       pokemonteam: [
         {
           name: 'Alakazam',
@@ -131,6 +137,7 @@ export class KantoRegion {
 
     { name: 'Blaine', 
       badge: ' Volcano Badge ', 
+      location: 'Cinnabar Island',
       pokemonteam: [
         {
           name: 'Arcanine',
@@ -151,7 +158,8 @@ export class KantoRegion {
     },
 
     { name: 'Giovanni', 
-      badge: ' Earth Badge ', 
+      badge: ' Earth Badge ',
+      location: 'Viridian City', 
       pokemonteam: [
         {
           name: 'Rhyhorn',
