@@ -1,1 +1,25 @@
-<p>johto-region works!</p>
+<section class = "johto-region">
+    <h1>Johto Region</h1>
+
+    <div class = "card-grid">
+        @for (leader of JohtoGymLeaders(); track leader.name) {
+            <div class = "card" [style.border-color]="leader.typeColor">
+                <h3 [style.color]="leader.typeColor">{{ leader.name }}</h3>
+                <p><strong>Type:</strong> <span [style.color]="leader.typeColor">{{ leader.type }}</span></p>
+                <p><strong>Badge:</strong> {{ leader.badge }}</p>
+                <p><strong>Location:</strong> {{ leader.location }}</p>
+
+                <div class = "team">
+                    <h4>Team:</h4>
+                    <ul>
+                        @for (pokemon of leader.pokemonteam; track pokemon.name) {
+                            <li><strong>----Name:</strong> {{ pokemon.name }}----</li>
+                            <li><strong>Type:</strong> {{ pokemon.type }}</li>
+                            <li><strong>Level:</strong> {{ pokemon.level }}</li>
+                        }
+                    </ul>
+                </div>   
+            </div>
+        }
+    </div>
+</section>
