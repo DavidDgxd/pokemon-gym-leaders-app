@@ -11,7 +11,9 @@ export class KantoRegion {
     { 
       name: 'Brock', 
       badge: ' Boulder Badge ', 
-      location: 'Pewter City',  
+      location: 'Pewter City',
+      type: 'Rock/Ground',
+      typeColor: 'brown',  
       pokemonteam: [
         {
           name: 'Onix',
@@ -29,7 +31,9 @@ export class KantoRegion {
     { 
       name: 'Misty', 
       badge: ' Cascade Badge ',
-      location: 'Cerulean City', 
+      location: 'Cerulean City',
+      Type: 'Water',
+      typeColor: 'blue', 
       pokemonteam: [
         {
           name: 'Staryu',
@@ -47,6 +51,8 @@ export class KantoRegion {
       name: 'Lt. Surge', 
       badge: ' Thunder Badge ', 
       location: 'Vermilion City',
+      type: 'Electric',
+      typeColor: 'yellow',
       pokemonteam: [
         {
           name: 'Pikachu',
@@ -70,6 +76,8 @@ export class KantoRegion {
       name: 'Erika', 
       badge: ' Rainbow Badge ', 
       location: 'Celadon City',
+      type: 'Grass',
+      typeColor: 'green',
       pokemonteam: [
         {
           name: 'Vileplume',
@@ -91,8 +99,10 @@ export class KantoRegion {
 
     { 
       name: 'Koga', 
-      badge: ' Marsh Badge ', 
+      badge: ' Soul Badge ', 
       location: 'Fuchsia City',
+      type: 'Poison',
+      typeColor: 'purple',
       pokemonteam: [
         {
           name: 'Koffing',
@@ -114,8 +124,10 @@ export class KantoRegion {
 
     { 
       name: 'Sabrina', 
-      badge: ' Soul Badge ', 
+      badge: ' Marsh Badge ', 
       location: 'Saffron City',
+      type: 'Psychic',
+      typeColor: 'pink',
       pokemonteam: [
         {
           name: 'Alakazam',
@@ -138,6 +150,8 @@ export class KantoRegion {
     { name: 'Blaine', 
       badge: ' Volcano Badge ', 
       location: 'Cinnabar Island',
+      type: 'Fire',
+      typeColor: 'orange',
       pokemonteam: [
         {
           name: 'Arcanine',
@@ -160,6 +174,8 @@ export class KantoRegion {
     { name: 'Giovanni', 
       badge: ' Earth Badge ',
       location: 'Viridian City', 
+      type: 'Ground/Rock',
+      typeColor: 'brown',
       pokemonteam: [
         {
           name: 'Rhyhorn',
