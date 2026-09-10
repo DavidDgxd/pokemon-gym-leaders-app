@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { KantoRegion } from './kanto-region/kanto-region';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [KantoRegion],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

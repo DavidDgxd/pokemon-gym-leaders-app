@@ -1,6 +1,53 @@
-.region-container {
+.kanto-region {
+  padding : 2rem;
+  background-color: #fdfdf5;
+}
+
+.kanto-region h1 {
+  font-family: 'Arial', sans-serif;
+  color: #d32f2f;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.card-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  padding: 1.25rem;
+  width: 250px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.team {
+  margin-top: 1rem;
+  border-top: 1px solid #eee;
+  padding-top: 0.5rem;
+}
+
+.team h4 {
+  margin-bottom: 0.25rem;
+}
+
+.team ul {
+  padding-left: 1.2rem;
+  margin-top: 0.25rem;
+}
+
+.team li {
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
 }

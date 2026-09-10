@@ -13,9 +13,10 @@
                     <h4>Team:</h4>
                     <ul>
                         @for (pokemon of leader.pokemonteam; track pokemon.name) {
-                            <li>Name: {{ pokemon.name }}</li>
-                            <li>Type: {{ pokemon.type }}</li>
-                            <li>Level: {{ pokemon.level }}</li>
+                            <li><strong>----Name:</strong> {{ pokemon.name }}----</li>
+                            <li><strong> Type:</strong> {{ pokemon.type }}</li>
+                            <li><strong> Level:</strong> {{ pokemon.level }}</li>
+
                         }
                     </ul>
                 </div>   
